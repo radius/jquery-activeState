@@ -10,13 +10,13 @@ You need to have jQuery 1.7 or higher. Include the script *after* the jQuery lib
 
 ## Usage
 
-Apply the plugin to an element. By default, the plugin will bind to child ```li``` elements and add a class called ```active``` to the ```li``` on ```touchstart mousedown``` event
+Apply the plugin to an element. By default, the plugin will bind to child ```li``` elements and add a class called ```active``` to the ```li``` on ```touchstart mousedown``` event, so using the default settings it makes sense to bind to a ```ul```.
 
     $('ul').activeState();
 
 Completely configured use case
 
-    $('ul').activeState({
+    $('#foo .thing ul').activeState({
     	selector: 'li',
     	activeClass: 'active',
     	trigger: 'touchstart mousedown',
