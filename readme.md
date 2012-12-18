@@ -4,7 +4,7 @@ All this plugin does is add a class to a selector and then remove the class afte
 
 ## Installation
 
-Include the script *after* the jQuery library
+You need to have jQuery 1.7 or higher. Include the script *after* the jQuery library
 
     <script src="/path/to/jquery.activeState.js"></script>
 
