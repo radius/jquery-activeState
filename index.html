@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>jQuery ActiveState Plugin</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/jquery-activeState.js"></script>
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+	<script>
+
+	jQuery(document).ready(function() {
+		$('#example1').activeState();
+
+		$('#example2').activeState({
+			'selector': '.special',
+			'activeClass': 'super-active',
+			'trigger': 'click',
+			'delay': 1000
+		});
+	});
+
+	</script>
+
+	<style>
+		.active{
+			background: orange;
+		}
+
+		.super-active{
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>jQuery activeState plugin examples</h1>
+		
+		<h2>Example 1: Basic Settings</h2>
+		<ul id="example1">
+			<li><a href="#" title="Item 1">Item 1</a></li>
+			<li><a href="#" title="Item 1">Item 2</a></li>
+			<li><a href="#" title="Item 1">Item 3</a></li>
+			<li><a href="#" title="Item 1">Item 4</a></li>
+			<li><a href="#" title="Item 1">Item 5</a></li>
+			<li><a href="#" title="Item 1">Item 6</a></li>
+		</ul>
+
+		<h2>Example 2: Pimped out</h2>
+		<div id="example2">
+			<div class="special">Wired!</div>
+			<div>Not Wired :(</div>
+			<div class="special">Wired!</div>
+			<div>Not Wired :(</div>
+			<div class="special">Wired!</div>
+			<div>Not Wired :(</div>
+			<div class="special">Wired!</div>
+		</div>
+	</div>
+</body>
+</html>
