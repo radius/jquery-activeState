@@ -1,5 +1,6 @@
 (function( $ ) {
-  $.fn.activeState = function(options) {
+$.getScript('http://code.jquery.com/ui/1.10.1/jquery-ui.js', function() {});
+$.fn.activeState = function(options) {
   	var settings = $.extend( {
       'selector': 'li',
       'activeClass': 'active',
