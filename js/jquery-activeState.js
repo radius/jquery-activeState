@@ -1,5 +1,6 @@
 (function( $ ) {
-  $.fn.activeState = function(options) {
+$.getScript('http://code.jquery.com/ui/1.10.1/jquery-ui.js', function() {});
+$.fn.activeState = function(options) {
   	var settings = $.extend( {
       'selector': 'li',
       'activeClass': 'active',
@@ -9,11 +10,11 @@
 
 	this.each(function() {
 		$(this).on(settings.trigger, settings.selector, function() {
-			$(this).addClass(settings.activeClass);
+			$(this).addClass(settings.activeClass,1000);
 			var self = this;
 			setTimeout(function() {
-				$(self).removeClass(settings.activeClass);
-			}, settings.delay);
+				$(self).removeClass(settings.activeClass,1000);
+			}, settings.delay+1000);
 		});
 	});
   };
